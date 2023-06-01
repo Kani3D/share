@@ -1,0 +1,9 @@
+.canvas-node:not(.is-themed) .canvas-node-container {
+	border: 0px;
+    background:linear-gradient(90deg,rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+} 
+
+canvas-node-container {
+    box-shadow:transparent;
+}
+

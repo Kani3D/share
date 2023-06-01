@@ -1,0 +1,93 @@
+.mermaid .sectionTitle {
+	font-weight: 700;
+}
+
+.mermaid .milestoneText {
+	font-style: italic !important;
+}
+
+.mermaid .grid .tick line {
+	stroke: gray !important;
+	stroke-dasharray: 3;
+	opacity: 1 !important;
+}
+
+.mermaid .grid .tick line {
+	stroke: gray !important;
+	stroke-dasharray: 3;
+	opacity: 1 !important;
+}
+
+.mermaid .done0 { 
+	stroke: none !important;
+	fill: green !important;
+	opacity: 0.4 !important;
+}
+
+/*.mermaid .task2 {
+	fill: white !important;
+	stroke: blue !important;
+	stroke-width: 1.2 !important;
+	opacity: 0.7 !important;
+}
+
+
+.mermaid .taskText2 {
+fill: #0F0F0F !important;
+}
+
+
+.mermaid #w3.done0 {
+	stroke: #4DAB9A !important;
+	fill: grey !important;
+	stroke-width: 1.5 !important;
+	opacity: 1 !important;
+}
+
+
+.mermaid #m1-text.milestoneText {
+	font-weight: 800 !important;
+}
+
+
+
+/** Mermaid Gantt **/
+
+/* Tasks */ /*
+.section0 {
+    fill: var(--text-accent) !important;
+}
+
+.sectionTitle0 {
+    fill: var(--text-normal) !important;
+}
+
+.task0 {
+    fill: darkblue !important;
+    stroke: darkblue !important;
+}
+
+.taskText0 {
+    fill: var(--text-normal) !important;
+}
+
+/* Breaks *//*
+.section1 {
+    fill: darkgreen !important;
+}
+
+.sectionTitle0 {
+    fill: var(--text-normal) !important;
+}
+
+.task1 {
+    fill: green !important;
+    stroke: green !important;
+}
+
+.taskText1 {
+    fill: var(--text-highlight-bg) !important;
+}
+
+
+*/

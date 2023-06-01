@@ -1,0 +1,11 @@
+.callout[data-callout="airplay"] {
+    --callout-color: 255, 255, 255;
+    --callout-icon: airplay;
+}
+
+.callout[data-callout="source"] {
+    --callout-color: 255, 255, 255;
+    --callout-icon: video;
+}
+
+/*  https://lucide.dev/?search=source  */

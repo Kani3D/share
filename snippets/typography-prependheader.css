@@ -1,0 +1,38 @@
+va::before {
+    content: '';
+}
+
+/* Prepend text to h1 headers */
+.markdown-rendered h1::after, .HyperMD-header-1::after, h1::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 0px;
+  margin-right: 25px;
+}
+
+/* Prepend text to h2 headers */
+.markdown-rendered h2::after, .HyperMD-header-2::after, h2::after {
+  content: "⚜️";
+}
+
+/* Prepend text to h3 headers */
+.markdown-rendered h3::before, .HyperMD-header-3::before, h3::before {
+  content: "";
+}
+
+/* Prepend text to h4 headers */
+.markdown-rendered h4::before, .HyperMD-header-4::before, h4::before {
+  content: "";
+}
+
+/* Prepend text to h5 headers */
+.markdown-rendered h5::before, .HyperMD-header-5::before, h5::before {
+  content: "";
+}
+
+/* Prepend text to h6 headers */
+.markdown-rendered h6::before, .HyperMD-header-6::before, h6::before {
+  content: "";
+}
+
