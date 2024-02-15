@@ -1,7 +1,0 @@
-.workspace-leaf-content hr {
-  border-image: linear-gradient(90deg, transparent, rgba(138,117,0,0.90),transparent) 1; 
-  border-left: none; 
-  border-top: linear-gradient(90deg, transparent, rgba(138,117,0,0.90),transparent) 1; 
-  border-right: none;
-  padding-bottom: none;
-}
