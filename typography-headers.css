@@ -1,0 +1,804 @@
+/*LIGHT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Prepend/Append text to h1 headers */
+/*
+.markdown-rendered h1::before, .HyperMD-header-1::before, h1::before {
+  content: "";
+  display: inline-block;
+  width: 50px; /* Display the image at its original width
+  height: 25px; /* Display the image at its original height 
+  background-image: url('https://svgur.com/i/toA.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size 
+  filter: hue-rotate(0deg);
+  margin-left: 0px; /* Adjust the value as needed to move the icon to the right */
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom 
+  margin-bottom: -4px; /* Move the icon 2 pixels up
+  /* Additional styles for the icon 
+}
+*/
+
+/* Prepend/Append text to h2 headers */
+.theme-light .markdown-rendered h2::before, .theme-light .HyperMD-header-2::before, .theme-light h2::before {
+  content: "";
+  display: inline-block;
+  width: 64px; /* Display the image at its original width */
+  height: 32px; /* Display the image at its original height */
+  background-image: url('https://svgur.com/i/tnb.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size */
+  filter: hue-rotate(157deg);
+  margin-left: 5px; /* Adjust the value as needed to move the icon to the right */
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom */
+  margin-bottom: -4px; /* Move the icon 2 pixels up */
+  /* Additional styles for the icon */
+  margin-right: -25px;
+}
+
+/* Prepend/Append text to h3 headers */
+.theme-light .markdown-rendered h3::before, .theme-light .HyperMD-header-3::before, .theme-light h3::before {
+  content: "";
+  display: inline-block;
+  width: 58px; /* Display the image at its original width */
+  height: 29px; /* Display the image at its original height */
+  background-image: url('https://svgur.com/i/tnb.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size */
+  filter: hue-rotate(0deg);
+  margin-left: 5px; /* Adjust the value as needed to move the icon to the right */
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom */
+  margin-bottom: -4px; /* Move the icon 2 pixels up */
+  /* Additional styles for the icon */
+  margin-right: -18px;
+}
+
+/* Prepend/Append text to h4 headers */
+.theme-light .markdown-rendered h4::before, .theme-light .HyperMD-header-4::before, .theme-light h4::before {
+  content: "";
+  display: inline-block;
+  width: 52px; /* Display the image at its original width */
+  height: 26px; /* Display the image at its original height */
+  background-image: url('https://svgur.com/i/tnb.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size */
+  filter: hue-rotate(-35deg);
+  margin-left: 5px; /* Adjust the value as needed to move the icon to the right */
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom */
+  margin-bottom: -4px; /* Move the icon 2 pixels up */
+  /* Additional styles for the icon */
+  margin-right: -13px;
+}
+
+/* Prepend/Append text to h5 headers */
+.theme-light .markdown-rendered h5::before, .theme-light .HyperMD-header-5::before, .theme-light h5::before {
+  content: "";
+  display: inline-block;
+  width: 46px; /* Display the image at its original width */
+  height: 23px; /* Display the image at its original height */
+  background-image: url('https://svgur.com/i/tnb.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size */
+  filter: hue-rotate(-70deg);
+  padding-right: 3px;
+  margin-left: 5px; /* Adjust the value as needed to move the icon to the right */
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom */
+  margin-bottom: -4px; /* Move the icon 2 pixels up */
+  /* Additional styles for the icon */
+  margin-right: -7px;
+}
+
+/* Prepend/Append text to h6 headers */
+.theme-light .markdown-rendered h6::before, .theme-light .HyperMD-header-6::before, .theme-light h6::before {
+  content: "";
+  display: inline-block;
+  width: 40px; /* Display the image at its original width */
+  height: 20px; /* Display the image at its original height */
+  background-image: url('https://svgur.com/i/tnb.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size */
+  filter: hue-rotate(-105deg);
+  padding-right: 6px;
+  margin-left: 5px; /* Adjust the value as needed to move the icon to the right */
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom */
+  margin-bottom: -4px; /* Move the icon 2 pixels up */
+  /* Additional styles for the icon */
+  margin-right: -1px;
+}
+
+
+
+
+
+
+
+
+/* Custom Headers */
+
+/*.header {
+  border: 0px solid;
+  border-image: linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-width: 1px;
+  border-left:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-top:none; 
+  border-right:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  padding-bottom: 1px;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  text-align: center;
+  color: #000000;
+  /*background-image: linear-gradient(to right, rgb(16, 23, 34), rgb(16, 23, 34), rgb(16, 23, 34));
+}
+  */
+.theme-light h1,
+.theme-light .HyperMD-header.HyperMD-header-1 {
+  /*background-color: rgba(0, 0, 0,0.20);*/
+  border: 0px solid;
+  border-image: linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90), transparent) 1;   
+  border-width: 1px;
+  border-left:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-top:none; 
+  border-right:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  text-align: center!important;
+  color: rgba(144, 127, 82,1);
+  font-size: 2em
+  /*background-image: linear-gradient(to right, rgb(16, 23, 34), rgb(16, 23, 34), rgb(16, 23, 34));*/
+}
+
+.theme-light .HyperMD-header-2,
+.theme-light h2 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.80);
+  text-align: left;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.theme-light .HyperMD-header-3,
+.theme-light h3 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  border: 1px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.80);
+  font-size: 1.7em;
+  font-weight: 500;
+}
+.theme-light .HyperMD-header-4,
+.theme-light h4 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  border: 1px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.60);
+  font-size: 1.5em;
+  font-weight: 450;
+}
+.theme-light .HyperMD-header-5,
+.theme-light h5 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  border: 1px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.40);
+  font-size: 1.45em;
+  font-weight: 400;
+}
+.theme-light .HyperMD-header-6,
+.theme-light h6 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  border: 1px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.20);
+  font-size: 1.4em;
+  font-weight: 350;
+}
+
+/* Dividers */
+.theme-light .workspace-leaf-content hr {
+  border-image: linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1; 
+  border-left: none; 
+  border-top: linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1; 
+  border-right: none;
+  padding-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DARK<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Prepend/Append text to h1 headers */
+/*
+.theme-dark.markdown-rendered h1::before,
+.theme-dark.HyperMD-header-1::before,
+.theme-dark h1::before {
+  content: "";
+  display: inline-block;
+  width: 50px; /* Display the image at its original width 
+  height: 25px; /* Display the image at its original height 
+  background-image: url('https://svgur.com/i/toA.svg');
+  background-repeat: no-repeat;
+  background-size: auto; /* Display the image at its original size 
+  filter: hue-rotate(0deg);
+  margin-left: 5px; /* Adjust the value as needed to move the icon to the right 
+  /*vertical-align: bottom;*/ /* Move the icon to the bottom 
+  margin-bottom: -4px; /* Move the icon 2 pixels up 
+  /* Additional styles for the icon 
+  margin-right: -25px;
+}*/
+/*
+.markdown-preview-view .collapse-indicator {
+    position: absolute;
+    cursor: var(--cursor);
+}*/
+
+/* Change collapse Icon 
+.markdown-preview-view .heading-collapse-indicator,
+.markdown-preview-view .collapse-indicator  {
+}*/
+
+/* add space beneath folded headers - reader view, edit view */
+.is-collapsed > :is(h1, h2),
+.HyperMD-header > .cm-fold-indicator.is-collapsed ~ .cm-widgetBuffer:last-of-type { 
+    margin-bottom: 5px !important; 
+	opacity: 0.5!important;
+	transform: rotateX(360deg)!important;
+	transition-duration: 1s!important;
+	background-color: transparent!important;
+}
+
+.is-collapsed > :is(h3, h4, h5, h6),
+.HyperMD-header > .cm-fold-indicator.is-collapsed ~ .cm-widgetBuffer:last-of-type { 
+    margin-bottom: 5px !important; 
+	opacity: 0.5!important;
+	transition-duration: 1s!important;
+	background-color: transparent!important;
+}
+
+.heading-collapse-indicator svg.svg-icon,
+.view-content .collapse-indicator svg.svg-icon {
+	display: none;
+}
+
+/*.markdown-source-view.mod-cm6 .cm-fold-indicator {
+	display: none;
+}*/
+
+h1 .collapse-indicator,
+.HyperMD-header-1 .cm-fold-indicator {
+	display: block!important;
+	position: absolute!important;
+	margin-top:11px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(157deg);
+	opacity: 1!important;
+	transform: rotateY(0deg);
+	transition-duration: 1s;
+}
+
+h1 .collapse-indicator.is-collapsed,
+.HyperMD-header-1 .cm-fold-indicator.is-collapsed {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 11px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url ('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(157deg);
+	opacity: 1!important;
+	/*transform: rotateY(360deg);*/
+	transition-duration: 1s;
+}
+
+h2 .collapse-indicator,
+.HyperMD-header-2 .cm-fold-indicator {
+	display: block!important;
+	position: absolute!important;
+	margin-top:6px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(157deg);
+	opacity: 1!important;
+	transform: rotateY(0deg);
+	transition-duration: 1s;
+}
+
+h2 .collapse-indicator.is-collapsed,
+.HyperMD-header-2 .cm-fold-indicator.is-collapsed {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 6px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	/*filter: hue-rotate(-203deg);*/
+	opacity: 1!important;
+	/*transform: rotateY(-360deg);*/
+	transition-duration: 1s;
+}
+
+h3 .collapse-indicator,
+.HyperMD-header-3 .cm-fold-indicator {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 7px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(0deg);
+	opacity: 1!important;
+	transform: rotateY(0deg);
+	transition-duration: 1s;
+}
+
+h3 .collapse-indicator.is-collapsed,
+.HyperMD-header-3 .cm-fold-indicator.is-collapsed {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 7px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	/*filter: hue-rotate(-360deg);*/
+	opacity: 1!important;
+	transform: rotateY(360deg);
+	transition-duration: 1s;
+}
+
+h4 .collapse-indicator,
+.HyperMD-header-4 .cm-fold-indicator {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 7px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(-35deg);
+	opacity: 1!important;
+	transform: rotateY(0deg);
+	transition-duration: 1s;
+}
+
+h4 .collapse-indicator.is-collapsed,
+.HyperMD-header-4 .cm-fold-indicator.is-collapsed {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 7px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(-35deg);
+	opacity: 1!important;
+	transform: rotateY(-360deg);
+	transition-duration: 1s;
+}
+
+h5 .collapse-indicator,
+.HyperMD-header-5 .cm-fold-indicator {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 7px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(-70deg);
+	opacity: 1!important;
+	transform: rotateY(0deg);
+	transition-duration: 1s;
+}
+
+h5 .collapse-indicator.is-collapsed,
+.HyperMD-header-5 .cm-fold-indicator.is-collapsed {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 7px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(-70deg);
+	opacity: 1!important;
+	transform: rotateY(-360deg);
+	transition-duration: 1s;
+}
+
+h6 .collapse-indicator,
+.HyperMD-header-6 .cm-fold-indicator {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 5px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(-105deg);
+	opacity: 1!important;
+	transform: rotateY(0deg);
+	transition-duration: 1s;
+}
+
+h6 .collapse-indicator.is-collapsed,
+.HyperMD-header-6 .cm-fold-indicator.is-collapsed {
+	display: block!important;
+	position: absolute!important;
+	margin-top: 5px;
+	margin-left: -520px!important;
+	stroke-width: 0px;
+	width: 1000px; /* Display the image at its original width */
+	height: 18px; /* Display the image at its original height */
+	background-image: url('https://svgur.com/i/tnb.svg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	filter: hue-rotate(-105deg);
+	opacity: 1!important;
+	transform: rotateY(-360deg);
+	transition-duration: 1s;
+}
+
+
+.view-content .collapse-indicator svg.svg-icon {
+}
+
+.heading-collapse-indicator .collapse-indicator .collapse-icon {
+}
+
+.heading-collapse-indicator .collapse-indicator .collapse-icon .is-collapsed {
+}
+
+/*.header {
+  border: 0px solid;
+  border-image: linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-width: 1px;
+  border-left:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-top:none; 
+  border-right:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  padding-bottom: 1px;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  text-align: center;
+  color: #ffffff;
+  /*background-image: linear-gradient(to right, rgb(16, 23, 34), rgb(16, 23, 34), rgb(16, 23, 34));
+}
+  */
+.theme-dark h1,
+.theme-dark .header-h1,
+.theme-dark .markdown-rendered h1,
+.theme-dark .HyperMD-header-1  {
+  padding-left: 5px;
+  border: 0px solid;
+  border-width: 0px;
+  border-left:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-top:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1; 
+  border-right:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  text-align: center!important;
+  color: rgba(144, 127, 82,1);
+  background-color: var(--bg2);
+  font-size: 2.1em;
+  font-weight: 600;
+  transform: rotateY(0deg);
+  transition-duration: 1s;
+}
+
+.theme-dark h2,
+.theme-dark .header-h2,
+.theme-dark .markdown-rendered h2,
+.theme-dark .HyperMD-header-2 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  padding-left: 5px;
+  background-color: var(--bg2);
+  border: 0px solid;
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.80);
+  text-align: left;
+  font-size: 1.6em;
+  font-weight: 500;
+  font-variant: small-caps;
+  transform: rotateX(0deg);
+  transition-duration: 1s;
+}
+.theme-dark .HyperMD-header-3,
+.theme-dark h3,
+.theme-dark .header-h3 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  padding-left: 5px;
+  background-color: var(--bg2);
+  border: 0px solid;
+  /*border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90)) 1; */
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(158, 118, 236,0.7);
+  font-size: 1.5em;
+  font-weight: 400;
+  font-variant: small-caps;
+  transition-duration: 1s;
+  
+}
+.theme-dark .HyperMD-header-4,
+.theme-dark h4,
+.theme-dark .header-h4 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  padding-left: 5px;
+  background-color: var(--bg2);
+  border: 0px solid;
+  /*border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1;*/ 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(93, 135, 230,0.7);
+  font-size: 1.4em;
+  font-variant: small-caps;
+  transition-duration: 1s;
+}
+.theme-dark .HyperMD-header-5,
+.theme-dark h5,
+.theme-dark .header-h5 {
+	padding-left: 5px;
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  background-color: var(--bg2);
+  border: 0px solid;
+ /* border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90)) 1; */
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(176, 217, 231,0.8);
+  font-size: 1.3em;
+  font-variant: small-caps;
+  transition-duration: 1s;
+}
+.theme-dark .HyperMD-header-6,
+.theme-dark h6,
+.theme-dark .header-h6 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);*/
+  padding-left: 5px;
+  background-color: var(--bg2);
+  border: 0px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(141, 209, 191,0.70);
+  font-size: 1.2em;
+  font-variant: small-caps;
+  transition-duration: 1s;
+}
+
+
+/*
+.theme-dark h1,
+.theme-dark .header-h1,
+.theme-dark .markdown-rendered h1,
+.theme-dark .HyperMD-header-1  {
+  border: 0px solid;
+  border-width: 0px;
+  border-left:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-top:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1; 
+  border-right:linear-gradient(90deg, transparent, rgba(144, 127, 82,0.90),transparent) 1;
+  border-radius: var(--radius-m);
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  text-align: center!important;
+  color: rgba(144, 127, 82,1);
+  background-color: var(--bg2);
+  font-size: 2.1em
+}
+.theme-dark h2,
+.theme-dark .header-h2,
+.theme-dark .markdown-rendered h2,
+.theme-dark .HyperMD-header-2 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  border: 1px solid;
+  border-image: linear-gradient(90deg, rgba(144, 127, 82,0.90), rgba(144, 127, 82,0.90), transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.80);
+  text-align: left;
+  font-size: 1.8em
+}
+.theme-dark .HyperMD-header-3,
+.theme-dark h3,
+.theme-dark .header-h3 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  border: 1px solid;
+  border-image: repeating-linear-gradient(90deg, rgba(162, 150, 110,0.40), rgba(162, 150, 110,0.30), rgba(162, 150, 110,0.01), transparent, transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.80);
+  font-size: 1.7em
+}
+.theme-dark .HyperMD-header-4,
+.theme-dark h4,
+.theme-dark .header-h4 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  border: 1px solid;
+  border-image: repeating-linear-gradient(90deg, rgba(162, 150, 110,0.40), rgba(162, 150, 110,0.30), rgba(162, 150, 110,0.01), transparent, transparent, transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.60);
+  font-size: 1.6em
+}
+.theme-dark .HyperMD-header-5,
+.theme-dark h5,
+.theme-dark .header-h5 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  border: 1px solid;
+  border-image: repeating-linear-gradient(90deg, rgba(162, 150, 110,0.40), rgba(162, 150, 110,0.01), transparent, transparent, transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.40);
+  font-size: 1.5em
+}
+.theme-dark .HyperMD-header-6,
+.theme-dark h6,
+.theme-dark .header-h6 {
+  /*border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  border: 1px solid;
+  border-image: repeating-linear-gradient(90deg, rgba(162, 150, 110,0.40), transparent, transparent, transparent, transparent) 1; 
+  border-left:none; 
+  border-top:none; 
+  border-right:none;
+  padding-bottom: 1px;
+  text-shadow: 0px 0px 0px rgba(144, 127, 82,0.95);
+  color: rgba(144, 127, 82,0.20);
+  font-size: 1.4em
+}
+*/
+
+
+/*MARGIN HEADERS*/
+
+p {
+	margin-block-start: 0.5em;
+}
+
+.markdown-preview-view h1 {
+  margin-block-start: 0em!important;
+  margin-block-end: 1em!important;
+}
+
+.markdown-preview-view h2 {
+  margin-block-start: 2em!important;
+  margin-block-end: 0em!important;
+}
+
+.markdown-preview-view h3 {
+  margin-block-start: 2em!important;
+  margin-block-end: 0em!important;
+}
+
+.markdown-preview-view h4 {
+  margin-block-start: 2em!important;
+  margin-block-end: 0em!important;
+}
+
+.markdown-preview-view h5 {
+  margin-block-start: 2em!important;
+  margin-block-end: 0em!important;
+}
+
+.markdown-preview-view h6 {
+  margin-block-start: 2em!important;
+  margin-block-end: 0em!important;
+}
